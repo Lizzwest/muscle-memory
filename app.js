@@ -130,3 +130,57 @@ console.log(paraFour);
 // paraFive.textContent= "Damien Lillard";
 // console.log(paraFive);
 
+const containerSix = document.createElement("div")
+console.log(containerSix);
+containerSix.classList.add("container-six");
+//console.log(containerSix);
+
+const sectionSix = document.createElement("h2");
+console.log(sectionSix);
+sectionSix.setAttribute("id","section-six")
+sectionSix.textContent ="Rockets";
+
+const paraSix= document.createElement("p");
+paraSix.classList.add("paragraph-six")
+paraSix.textContent ="James Harden";
+console.log(paraSix);
+
+const body = document.querySelector("body");
+body.appendChild(containerSix);
+containerSix.appendChild(sectionSix); 
+containerSix.appendChild(paraSix);
+
+// create another container
+const containerSeven = document.createElement("div")
+// add class
+containerSeven.classList.add("container-seven");
+console.log(containerSeven);
+// create another section
+const sectionSeven = document.createElement("h2");
+  // add an id
+sectionSeven.setAttribute("id","section-seven")
+ // add textContent
+sectionSeven.textContent ="Time for Rugby";
+
+console.log(sectionSeven);
+// create another paragraph
+  const paraSeven= document.createElement("p");
+  // add a class
+   
+paraSeven.classList.add("paragraph-seven")
+// add textContent
+paraSeven.textContent ="Springboks";
+console.log(paraSeven);
+// append the container to the body
+
+
+body.appendChild(containerSeven);
+
+// append section to the container
+
+containerSeven.appendChild(sectionSeven); 
+// append the paragraph to the container
+containerSeven.appendChild(paraSeven);
+
+
+
